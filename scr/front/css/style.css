@@ -1,0 +1,79 @@
+
+
+body {
+    background-color: cornflowerblue;
+    padding: 0;
+    margin: 0;
+}
+
+.main_box {
+
+    max-width: 100vmax;
+    align-items: top;
+    justify-content: center;
+    
+    
+}
+/*
+FOOTERR -- PARRTT
+*/
+header {
+    background-color: grey;
+    max-height: 100px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+}
+
+#postoh1 {
+    color: aliceblue;
+    text-align: left;
+    position: 1 1 2 2;
+    padding: 10px;
+
+
+}
+
+ .lista_de_acesso li {
+    padding: 10px;
+    position: 2 1 3 2;
+    list-style: none;
+    display: inline-block;
+
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    size: 16rem; 
+    text-align: right;
+}
+
+a:hover {
+    color: rgb(201, 201, 201);
+}
+
+/*
+
+INDEXX  
+*/
+
+/*
+
+LAVAÇÃO
+*/
+
+/*
+
+CONVENIENCIA 
+*/
+
+/*
+
+CONTROLE INTERNO
+*/
+
