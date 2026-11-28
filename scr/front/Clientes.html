@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sup Gas - Clientes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/clientes.css">
+</head>
+<body>
+    <main class="main_box">
+        <header>
+            <h1 id="postoh1"> <a href="index.html"> Sup Gas</a></h1>
+            <nav>
+            <ul class="lista_de_acesso">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="conveniencia.html">Conveniencia</a></li>
+                <li><a href="lavacao.html">Lavação</a></li>
+                <li><a href="mecanica.html">Mecanica</a></li>
+                <li><a href="petshop.html">Petshop</a></li>
+                <li><a href="controle_interno.html">Controle</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+            </ul>
+            </nav>
+        </header>
+
+        <section class="cartao">
+            <h2>Clientes</h2>
+
+            <form id="form-cliente">
+                <label>Nome
+                    <input id="nome" type="text" maxlength="120" required>
+                </label>
+                <label>CPF
+                    <input id="cpf" type="text" maxlength="14" placeholder="000.000.000-00">
+                </label>
+                <label>Endereço
+                    <input id="endereco" type="text" maxlength="200" required>
+                </label>
+
+                <fieldset>
+                    <legend>Contatos (mínimo 1)</legend>
+                    <div id="contatos"></div>
+                    <button type="button" id="btn-add-contato">+ Adicionar contato</button>
+                </fieldset>
+
+                <div class="botoes">
+                    <button type="submit" id="btn-salvar">Cadastrar</button>
+                    <button type="button" id="btn-cancelar" hidden>Cancelar edição</button>
+                </div>
+                <p id="mensagem" class="msg"></p>
+            </form>
+        </section>
+
+        <section class="cartao">
+            <h2>Clientes cadastrados</h2>
+            <div class="tabela-rolavel">
+                <table>
+                    <thead>
+                        <tr><th>Nome</th><th>CPF</th><th>Endereço</th><th>Contatos</th><th>Ações</th></tr>
+                    </thead>
+                    <tbody id="tabela-clientes"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- api.js primeiro: clientes.js usa as funcoes get/post/put/del dele -->
+    <script src="js/api.js"></script>
+    <script src="js/clientes.js"></script>
+</body>
+</html>

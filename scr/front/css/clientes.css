@@ -1,0 +1,46 @@
+.cartao {
+    background: #fff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cartao h2 { margin-top: 0; }
+
+form label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 4px;
+    font-weight: normal;
+}
+
+fieldset { margin: 16px 0; }
+
+.linha-contato {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.linha-contato input { flex: 1; padding: 8px; }
+.linha-contato select { padding: 8px; }
+
+button { padding: 8px 14px; cursor: pointer; margin-right: 6px; }
+
+.msg { min-height: 1.2em; margin: 12px 0 0; }
+.msg.ok { color: #1b7a34; }
+.msg.erro { color: #b00020; }
+
+.tabela-rolavel { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; }
